@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hi Maggy 💟🩷🤍😇</title>
+  <style>
+  body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #b6d4f4 0%, #d5b2ff 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    font-size: 2.8em;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px #00000055;
+  }
+
+  p {
+    font-size: 1.4em;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 5px #00000033;
+  }
+
+  .gif-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    z-index: 2;
+    position: relative;
+    padding: 30px 0;
+  }
+
+  .gif-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    transition: transform 0.3s ease;
+  }
+
+  .gif-container img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Floating hearts and sparkles */
+  .heart, .sparkle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    opacity: 0.8;
+    z-index: 1;
+    pointer-events: none;
+    animation: float 10s linear infinite;
+  }
+
+  .heart::before {
+    content: "💖";
+    font-size: 60px;
+  }
+
+  .sparkle::before {
+    content: "✨";
+    font-size: 45px;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-100vh) rotate(360deg);
+    }
+  }
+</style>
+</head>
+<body>
+
+  <h1>Hi Maggy</h1>
+  <p>
+    ur amazing btw and I hope ur doing okay<br>
+    and if ur not that's also okay 🫂<br>
+    sending u good vibes and peace ☁️🕊️<br>
+    but also if there's anything at all you know i'm here 💌<br>
+    hope u have a fab day and week iconic diva gorjus sunshine 💟🩷🤍😇
+    THE MOST IMPORTANT THING I FORGOT TO PUT IN IS - i adore you very very much quite possibly more than whisky atp 
+    can't wait to see ur gorjus self on monday too actually have i ever told u, u make my heart glow okay thats enough 
+  </p>
+
+  <div class="gif-container">
+    <img src="LADY_GAGA_GIF_URL.gif" alt="Lady Gaga">
+    <img src="LANA_DEL_REY_GIF_URL.gif" alt="Lana Del Rey">
+    <img src="TATE_MCRAE_GIF_URL.gif" alt="Tate McRae">    
+  </div>
+
+  <!-- Floating hearts and sparkles -->
+  <script>
+    const symbols = ['heart', 'sparkle'];
+    for (let i = 0; i < 25; i++) {
+      const el = document.createElement('div');
+      el.className = symbols[Math.floor(Math.random() * symbols.length)];
+      el.style.left = Math.random() * 100 + 'vw';
+      el.style.top = Math.random() * 100 + 'vh';
+      el.style.animationDuration = (8 + Math.random() * 5) + 's';
+      document.body.appendChild(el);
+    }
+  </script>
+
+</body>
+</html>
